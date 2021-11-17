@@ -14,7 +14,7 @@
 <?php
 $id=$_GET['id'];
 $query="DELETE from students WHERE id=$id";
-$delete=mysql_query($query);
+$delete=mysqli_query($con, $query);
 
 header("location:delete_account.php");
 

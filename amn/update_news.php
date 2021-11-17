@@ -47,7 +47,9 @@ $string3 = file_get_contents("../components/news_bar_files/news3.txt");
 
 <div id="container">
 <center>
-
+<h3>This functionality has been disabled for security reasons </h3> <br>
+<h3>Thanks for your understanding! </h3>
+<!--
 <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
 <h2>News 1</h2><input type= "text" name="news1" size = "80" height = "20" maxlength="150" value="<?php echo $string1; ?>"><br>
 <h2>News 2</h2><input type= "text" name="news2" size = "80" height = "20" maxlength="150" value="<?php echo $string2; ?>"><br>
@@ -58,7 +60,7 @@ $string3 = file_get_contents("../components/news_bar_files/news3.txt");
 <input type="submit" name="submit" value="Update News">
 
 </form>
-
+-->
 </center>
 </div>
 
@@ -90,10 +92,6 @@ if(isset($_POST['submit'])){
 		
 		
 		</script>";
-	
-	
-	
-	
 	
 	
 	

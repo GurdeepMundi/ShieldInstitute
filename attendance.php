@@ -51,9 +51,9 @@ for($i=0;$i<15;$i++){
 	}
 echo "</tr>";
 $query="SELECT * FROM cse_attendance;";
-$student=mysql_query($query);
+$student=mysqli_query($con, $query);
 
-while($record=mysql_fetch_assoc($student)){
+while($record=mysqli_fetch_assoc($student)){
 	
 	echo "<tr>";
 	

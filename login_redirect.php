@@ -59,8 +59,8 @@ if(isset($_POST['submit'])){
 	$query="SELECT * FROM students WHERE roll_no=$rollno";
 	
 	
-	$student=mysql_query($query);
-	$record=mysql_fetch_assoc($student);
+	$student=mysqli_query($con, $query);
+	$record=mysqli_fetch_assoc($student);
 	
 	if(md5($pass)==$record['password']){
 		session_start();

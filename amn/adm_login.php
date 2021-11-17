@@ -47,15 +47,14 @@ if(isset($_POST['submit'])){
 	$query="SELECT * FROM accounts WHERE name='$name'";
 	
 	
-	$accounts=mysql_query($query);
-	$record=mysql_fetch_assoc($accounts);
+	$accounts=mysqli_query($con, $query);
+	$record=mysqli_fetch_assoc($accounts);
 	if($pass == $record['password']){
 		session_start();
 		session_destroy();
 		session_start();
 		$_SESSION['name']=$record['name'];
 		$_SESSION['password']=$record['password'];
-		
 		
 		header("location:dashboard.php");
 	}else{

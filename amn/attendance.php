@@ -77,21 +77,18 @@ $values;
 	$value=array($_GET['0'],$_GET['1'],$_GET['2'],$_GET['3'],$_GET['4'],$_GET['5'],$_GET['6'],$_GET['7'],$_GET['8'],$_GET['9'],$_GET['10'],$_GET['11'],$_GET['12'],$_GET['13'],$_GET['14']);
 $query="INSERT INTO cse_attendance VALUES ('$value[0]','$value[1]','$value[2]','$value[3]','$value[4]','$value[5]','$value[6]','$value[7]','$value[8]','$value[9]','$value[10]','$value[11]','$value[12]','$value[13]','$value[14]');";
 
-$res=mysql_query($query);
+$res=mysqli_query($con, $query);
 
 if($res){
 	echo "<script type='text/javascript'> alert('Attendence uploaded');</script>";
 }else{
 	echo "<script type='text/javascript'> alert('failed');</script>";
-	echo mysql_error();
+	echo mysqli_error();
 }
 
 
 }
  ?>
- 
- 
- <?php>
 
 
 

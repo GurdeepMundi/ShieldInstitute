@@ -68,7 +68,7 @@ if(isset($_POST['submit'])){
 	$query="UPDATE students SET password='$pass'  WHERE roll_no=$rollno";
 	
 	
-	$res=mysql_query($query);
+	$res=mysqli_query($con, $query);
 	
 	if($res){
 		echo "<script type='text/javascript'>

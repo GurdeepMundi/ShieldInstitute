@@ -118,7 +118,7 @@ if(isset($_POST['submit'])){
 		
 		
 		
-		$res=mysql_query($query);
+		$res=mysqli_query($con, $query);
 		if($res){
 			echo "<script type='text/javascript'> alert('Account created succesfully, you are logged in now. scroll down and click on home button on the left to go back to homepage');</script>";
 			

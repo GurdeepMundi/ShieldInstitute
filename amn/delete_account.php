@@ -53,8 +53,8 @@ table a:hover{
 </tr>
 <?php
 $query="SELECT * FROM students;";
-$student=mysql_query($query);
-while($record=mysql_fetch_assoc($student)){
+$student=mysqli_query($con, $query);
+while($record=mysqli_fetch_assoc($student)){
 	
 	$str="id={$record['id']}";
 	echo "<tr>";
