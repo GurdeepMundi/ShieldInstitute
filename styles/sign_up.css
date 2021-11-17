@@ -1,0 +1,32 @@
+input,select,td{
+	
+	margin-top:15px;
+	font-size:19px;
+	margin-left:80px;
+	}
+	
+.first_col{
+	text-align:right;
+}
+
+input{
+	width:70%;
+	box-radius:40px;
+	}
+	/*#6b0d10*/
+input:focus{
+	box-shadow:0px 0px 3px blue;
+}
+
+
+h1{
+	font-size:50px;
+	background-color:#6b0d10;
+	color:white;
+	padding:8px;
+	margin:0px 0px 50px 0px;
+	}
+	
+a img:hover{
+	-webkit-filter: drop-shadow(0px 0px 5px #6b0d10); filter: drop-shadow(0px 0px 5px #6b0d10);
+}

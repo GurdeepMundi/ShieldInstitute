@@ -1,0 +1,19 @@
+
+#container ul li{
+	position:relative;
+	}
+
+
+#container ul{
+	padding-left:15px;
+	list-style-type:circle;
+	font-size:20px;
+	
+}
+#container ul li ul{
+	list-style-type:square;
+	margin-bottom:40px;
+}
+#container ul li ul a{
+	color:black;
+}

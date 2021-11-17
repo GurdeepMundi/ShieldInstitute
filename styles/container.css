@@ -1,0 +1,17 @@
+#container{
+	position:relative;
+	left:1%;
+	width:80%;
+	background:linear-gradient(#fce8e9,#e6eeff,#fce8e9);
+	padding:30px 10px;
+	box-shadow:0px 0px 5px black;
+	overflow:hidden;
+}
+
+/*these are headings one every page e.g. about us , contact us*/
+h2{
+	font-family:lucida console;
+	color:#6b0d10;
+	font-size:25px;
+	
+}
