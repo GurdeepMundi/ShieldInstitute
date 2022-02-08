@@ -1,4 +1,4 @@
-# ShieldInstitute
+# Shield Institute
 Website Project. Developed using HTML, CSS, PHP, javascript and MySQL.<br />
 It is a college website where Teachers can:
 - Take class Attendance
